@@ -1,0 +1,36 @@
+@import './var.scss';
+
+// .z-button {color:red}
+@mixin b($block) {
+    $B: $namespace+'-'+$block !global;
+    .#{$B} {
+        @content;
+    }
+}
+// .z-message.is-disabled  {  color:red}
+@mixin when($state) {
+    @at-root {
+        &.#{$state-prefix + $state} {
+            @content;
+        }
+    }
+}
+
+
+@mixin m($modifier) {
+    @at-root {
+        #{&+$modifier-separator+$modifier} {
+            @content;
+        }
+    }
+}
+
+@mixin e($element) {
+    @at-root {
+        & {
+            #{"." + $B + $element-separator + $element} {
+                @content;
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+$--color-primary: #409EFF;
+$--color-white: #FFFFFF;
+$--color-black: #000000;
+$--color-success: #67C23A;
+$--color-warning: #E6A23C;
+$--color-danger: #F56C6C;
+$--color-info: #909399;
+
+// 规范就叫BEM规范 block element modifier
+$namespace:'z'; // 修饰命名空间
+$state-prefix: 'is-';// 修饰状态
+$modifier-separator:'--'; // 修饰类型的
+$element-separator: '__'; // 划分空间分隔符
+
+
